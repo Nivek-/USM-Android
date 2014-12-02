@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DimGray"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/LightSteelBlue"
+       tools:context="${relativePackage}.${activityClass}" >
+
+        <ImageView
+            android:id="@+id/logo_usm"
+            android:layout_width="wrap_content"
+            android:layout_height="269dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_usm" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Ingresar" />
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Usuario..." >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_usm"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Clave..."
+            android:inputType="textPassword" />
+
+        </RelativeLayout>
+</RelativeLayout>

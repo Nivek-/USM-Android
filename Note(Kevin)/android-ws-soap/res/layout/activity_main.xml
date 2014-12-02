@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curso:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+           <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblMensaje2"
+        android:layout_alignBottom="@+id/lblMensaje2"
+        android:layout_alignParentRight="true"
+        android:text="Consultar" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Borrar" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnEnviar2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Actualizar" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/lblMensaje2"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_weight="0.02"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Spinner
+        android:id="@+id/CmbCursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/tableLayout2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CmbCursos"
+        android:layout_below="@+id/CmbCursos"
+        android:text="Asignatura:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/CmbAsignatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/CmbCursos"
+        android:layout_below="@+id/textView1" />
+
+ <Button
+     android:id="@+id/button1"
+     style="?android:attr/buttonStyleSmall"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentRight="true"
+     android:layout_alignTop="@+id/lblMensaje2"
+     android:layout_toRightOf="@+id/lblMensaje2"
+     android:text="Enviar" />
+
+ <TextView
+     android:id="@+id/txtResultado"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/lstNoticias"
+     android:layout_alignRight="@+id/lstNoticias"
+     android:layout_below="@+id/lstNoticias"
+     android:layout_marginTop="19dp" />
+
+ <ListView
+     android:id="@+id/lstNoticias"
+     android:layout_width="wrap_content"
+     android:layout_height="69dp"
+     android:layout_alignLeft="@+id/CmbAsignatura"
+     android:layout_alignRight="@+id/tableLayout2"
+     android:layout_below="@+id/CmbAsignatura"
+     android:layout_marginTop="18dp" >
+
+ </ListView>
+
+</RelativeLayout>

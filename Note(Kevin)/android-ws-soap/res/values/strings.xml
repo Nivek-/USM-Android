@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android WS SOAP</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Telefono</string>
+    <string name="consultar">Consultar</string>
+    <string name="enviar">Enviar</string>
+    <string name="enviar2">Enviar2</string>
+    <string name="Curso_obtenido">Curso</string>
+    <string name="title_activity_login">Inicio de Sesión</string>
+    <string name="title_activity_profesor">Menu Principal</string>
+    <string name="title_activity_alumno">Menú Principal</string>
+    <string name="title_activity_noticias_alum">Noticias</string>
+    <string name="title_activity_noticias_prof">Noticias</string>
+    <string name="title_activity_cargando">Cargando</string>
+    <string name="title_activity_casino">Ingreso Menú</string>
+    <string name="title_activity_construccion">Construccion</string>
+    <string name="title_activity_menu">Menú Casino USM</string>
+
+</resources>

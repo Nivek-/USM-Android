@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SlateGray"
+    tools:context="${relativePackage}.${activityClass}" >
+
+   <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnDisp"
+        android:layout_below="@+id/BtnDisp"
+        android:layout_marginTop="17dp"
+        android:text="Horario Profesores"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BtnCasino"
+        android:layout_alignRight="@+id/BtnNoticia"
+        android:layout_marginRight="14dp"
+        android:text="Noticias"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/BtnCasino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="69dp"
+        android:background="@color/SlateGray"
+        android:src="@drawable/menucasino" />
+
+    <ImageButton
+        android:id="@+id/BtnNoticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:background="@color/slategray"
+        android:src="@drawable/noticias" />
+
+    <ImageButton
+        android:id="@+id/BtnDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="46dp"
+        android:background="@color/slategray"
+        android:src="@drawable/horariodisp" />
+
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnCasino"
+        android:layout_below="@+id/BtnCasino"
+        android:layout_marginTop="22dp"
+        android:text="Menú Casino"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/BtnHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BtnCasino"
+        android:layout_alignLeft="@+id/BtnNoticia"
+        android:layout_alignRight="@+id/BtnNoticia"
+        android:layout_alignTop="@+id/BtnCasino"
+        android:background="@color/SlateGray"
+        android:src="@drawable/horarioalum" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/BtnHorario"
+        android:text="Horario Alumno"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

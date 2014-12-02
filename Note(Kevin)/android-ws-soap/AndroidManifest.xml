@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.sgoliver.android.soap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfesorActivity"
+            android:label="@string/title_activity_profesor" >
+        </activity>
+        <activity
+            android:name=".AlumnoActivity"
+            android:label="@string/title_activity_alumno" >
+        </activity>
+        <activity
+            android:name=".NoticiasAlumActivity"
+            android:label="@string/title_activity_noticias_alum" >
+        </activity>
+        <activity
+            android:name=".NoticiasProfActivity"
+            android:label="@string/title_activity_noticias_prof" >
+        </activity>
+        <activity
+            android:name=".CargandoActivity"
+            android:label="@string/title_activity_cargando" >
+        </activity>
+        <activity
+            android:name=".CasinoActivity"
+            android:label="@string/title_activity_casino" >
+        </activity>
+        <activity
+            android:name=".Construccion"
+            android:label="@string/title_activity_construccion" >
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+    </application>
+
+</manifest>
